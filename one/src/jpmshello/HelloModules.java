@@ -10,6 +10,8 @@ public class HelloModules {
 		System.out.println("The XML namespace prefix is: " + XML_NS_PREFIX);
 		HiModules hiModules = new HiModules();
 		System.out.println(hiModules.getHi());
+
+		Http2Client.sendAsync();
+		Http2Client.sendMultipleRequest();
 	}
-	
 }
